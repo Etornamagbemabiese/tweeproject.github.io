@@ -85,7 +85,7 @@ p {
 
 
 [[Go and sunbathe]]
-[[Go Swimming]]</tw-passagedata><tw-passagedata pid="3" name="Blue " tags="" position="762.5,800" size="100,100">&lt;html&gt;
+[[Go Swimming]]</tw-passagedata><tw-passagedata pid="3" name="Blue " tags="" position="875,750" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
 p {
@@ -105,7 +105,7 @@ p {
 
 [[Sleep]]
 [[Hang out with friends]]
-</tw-passagedata><tw-passagedata pid="4" name="Sleep" tags="" position="750,925" size="100,100">&lt;html&gt;
+</tw-passagedata><tw-passagedata pid="4" name="Sleep" tags="" position="900,875" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
 p {
@@ -125,8 +125,9 @@ p {
 &lt;/html&gt;
 
 [[Get up and workout]]
+[[Wake Up]]
 [[Sleep More]]
-</tw-passagedata><tw-passagedata pid="5" name="Hang out with friends" tags="" position="887.5,925" size="100,100">&lt;html&gt;
+</tw-passagedata><tw-passagedata pid="5" name="Hang out with friends" tags="" position="1075,925" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
 p {
@@ -166,7 +167,7 @@ p {
 &lt;/body&gt;
 &lt;/html&gt;
 
-[[Red ]] </tw-passagedata><tw-passagedata pid="7" name="Sleep More" tags="" position="875,1050" size="100,100">&lt;html&gt;
+[[Red ]] </tw-passagedata><tw-passagedata pid="7" name="Wake Up" tags="" position="1175,1100" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
 p {
@@ -205,7 +206,7 @@ p {
 &lt;/body&gt;
 &lt;/html&gt;
 
-[[Start]] </tw-passagedata><tw-passagedata pid="9" name="Granola and cereal with some coffee" tags="" position="750,1175" size="100,100">&lt;html&gt;
+[[Start]] </tw-passagedata><tw-passagedata pid="9" name="Granola and cereal with some coffee" tags="" position="725,1175" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
 p {
@@ -242,6 +243,7 @@ p {
 
 &lt;/body&gt;
 &lt;/html&gt;
+
 
 [[Talk to her]]
 [[Ignore her]]</tw-passagedata><tw-passagedata pid="11" name="Go Swimming" tags="" position="525,925" size="100,100">&lt;html&gt;
@@ -286,7 +288,7 @@ p {
 &lt;/html&gt;
 
 [[Ask for her number]]
-[[Call it a day and leave]]</tw-passagedata><tw-passagedata pid="13" name="Ignore her" tags="" position="512.5,1050" size="100,100">&lt;html&gt;
+[[Call it a day and leave]]</tw-passagedata><tw-passagedata pid="13" name="Ignore her" tags="" position="500,1050" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
 p {
@@ -304,6 +306,7 @@ p {
 &lt;/body&gt;
 &lt;/html&gt;
 
+if(
 [[Sleep]] </tw-passagedata><tw-passagedata pid="14" name="Pull over and talk to him" tags="" position="400,1050" size="100,100">&lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
@@ -502,6 +505,18 @@ p {
 
 
 [[Start]]
+</tw-passagedata><tw-passagedata pid="24" name="Sleep More" tags="" position="900,1025" size="100,100">(set: $hoursSleep to $hoursSleep + 9)
+
+[[more sleep|hours]]
+[[Wake Up]]
+
+You slept $hoursSleep.</tw-passagedata><tw-passagedata pid="25" name="hours" tags="" position="850,1225" size="100,100">{
+(if: $hoursSleep &gt;=0)[You got some good sleep]
+
+
+}
+
+[[Go and sunbathe]]
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
